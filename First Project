@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int health = 2;
+
+
+int main()
+{
+cout<<"What is your name?";
+string name;
+cin >> name;
+cout << "Ready to Live or Die or even worst never Escaping!\n";
+cout << "Your goal is to Escape " << name << " Good Luck!\n";
+cout << name << " Starts to walk foward to only encounter a big Goblin!/n";
+cout << "The only choices you have are to either run Left or Right ";
+int left;
+int right{};
+cin>>left;
+switch (left) {
+case 1:
+	cout << "By going left now you have gotten hit!";
+	health = health - 1;
+}
+switch (right) {
+case 2:
+	cout<<"By going right you have dodge the attack and was able to go right.";
+}
+}
